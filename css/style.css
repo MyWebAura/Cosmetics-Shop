@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: rgb(240, 240, 240);
+}
+.navbar{
+    background-color: #E76984;
+}
+.dropdown:hover .dropdown-menu {
+    display: block;
+  }
+.navbar .nav-item{
+    margin-inline: 10px;
+}
+.navbar .nav-item .nav-link{
+    transition: all ease-in-out 0.45s;
+}
+.navbar .nav-item .nav-link:hover{
+    color: transparent !important;
+    font-weight: 900;
+    -webkit-text-stroke: 1px white;
+    animation: navLinkAnim 1s 1 ease-in-out both;
+}
+@keyframes navLinkAnim {
+    0%{
+        letter-spacing: 0px;
+    }
+    50%{
+        letter-spacing: 5px;
+    }
+    100%{
+        letter-spacing: 0px;
+    }
+}
